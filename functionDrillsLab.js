@@ -12,8 +12,10 @@
 */
 
 //CODE HERE
-
-
+function helloWorld(){
+  console.log("Hello, World!")
+}
+helloWorld()
 ////////////////// PROBLEM 2 ////////////////////
 
 /*
@@ -21,7 +23,9 @@
 */
 
 //CODE HERE
-
+const jsNinja = () => {
+  return "I am a JavaScript ninja!"
+}
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,8 +35,10 @@
 */
 
 //CODE HERE
-
-
+const printName = (firstName) => {
+  console.log(firstName)
+}
+printName("Bob")
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
@@ -44,8 +50,10 @@
 */
 
 //CODE HERE
-
-
+const greeting = (name) => {
+  console.log(`Hello, ${name}`)
+}
+greeting("Jake")
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -58,8 +66,9 @@
 */
 
 //CODE HERE
-
-
+const compareNums = (num1, num2) => {
+  return (num1 > num2 ? num1 : num2)
+}
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -69,8 +78,13 @@
 */
 
 //CODE HERE
-
-
+const add = (problem6Num1, problem6Num2) => {
+  let withParseInt1 = parseInt(problem6Num1);
+  let withParseInt2 = parseInt(problem6Num2);
+  return withParseInt1 + withParseInt2
+}
+let sum = add("56", "6")
+console.log(sum);
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -84,7 +98,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -99,7 +113,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -110,7 +124,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
-
+const exclaimThree = (str) => `${str.toUpperCase()}!!!` 
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -124,7 +138,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -138,8 +152,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
-
+const nameCheck = (name) => {
+  if (name === "Steven"){
+    return "What is up Steven?"
+  }
+  else if (name === "Bryan"){
+    return "Hey Bryan!"
+  }
+  else {return `Cool name, ${name}`}
+};
+let nameGreeting = nameCheck("Batman");
+console.log(nameGreeting);
 ////////////////// PROBLEM 11 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
