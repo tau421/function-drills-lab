@@ -174,7 +174,19 @@ console.log(nameGreeting);
 */
 
 //CODE HERE
-
+const faveColorFinder = (color) => {
+  if (color === "red") {
+    return "red is a great color"
+  }
+  else if (color === "green"){
+    return "green is a solid favorite color"
+  }
+  else if (color === "black"){
+    return "so trendy"
+  }
+  else {return "you need to evaluate your favorite color choice"}
+}
+let colorRating = faveColorFinder("green");
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -185,8 +197,11 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
-
+const printAllNames = (names) => {
+for (i = 0; i < namesArr.length; i++)
+console.log(names[i])
+}
+printAllNames(namesArr);
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
@@ -197,7 +212,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
-
+const thatsOdd = (p13num) => {
+  if (p13num % 2 === 0){
+    return "That's not odd!"
+  }
+  else {return "That is odd indeed!"}
+}
+let oddChecker = thatsOdd(4);
+console.log(oddChecker);
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
@@ -209,6 +231,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+const bestMovie = (movieTitle) => `${movieTitle} is the best movie ever!`
+let bestMovieLog = bestMovie("Army of Darkness");
+console.log(bestMovieLog);
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -223,8 +248,16 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+const bigOrSmall = (arr) => {
+  let answers = []
+  for (i = 0; i < arr.length; i++){
+    if (arr[i] > 100){answers.push("big")}
+    else {answers.push("small")}
+  }
+  return answers
+}
 
-
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
 let loser = 'Glimmer'
